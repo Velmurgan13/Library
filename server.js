@@ -10,6 +10,7 @@ const bodyParser = require('body-parser')
 
 const indexRouter = require('./routes/index')
 const authorRouter = require('./routes/authors')
+const bookRouter = require('./routes/books')
 
 app.engine('hbs', expHbs({extname:'hbs'}))
 app.set('view engine', 'hbs')
@@ -30,7 +31,7 @@ db.once('open', () => console.log('connected to mongoose'))
 
 app.use('/', indexRouter)
 app.use('/authors', authorRouter)
-
+app.use('/books', bookRouter)
 
 app.listen(process.env.PORT || 3000)
 
