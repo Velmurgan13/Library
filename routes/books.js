@@ -155,31 +155,3 @@ function saveCover(book, coverEncoded) {
 }
 
 module.exports = router
-
-
-// const express = require('express');
-// const author = require('../models/author');
-// const router = express.Router()
-// const Book = require('../models/book')
-
-// // ALL Books ROUTE
-// router.get('/', async (req, res) => {
-    
-// })
-
-
-// //NEW Book ROUTE
-
-// router.get('/new', (req, res) => {
-    
-// })
-
-// // CREATE Book ROUTE
-
-// router.post('/', async (req, res) => {
-    
-// })
-
-
-
-// module.exports = router
